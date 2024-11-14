@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Brandon Sanderson</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Codigo de la barra -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SANDERSON</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" href="#">sagas</a>
+            </li>
+            <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="#">personajes</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="#">cosmere</a>
+              </li>
+                   <!-- Codigo del boton opciones que tiene que aparecer en la nav -->
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      opciones
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">opcion 1</a></li>
+                      <li><a class="dropdown-item" href="#">opcion 2</a></li>
+                      <li><a class="dropdown-item" href="#">opcion 3</a></li>
+                      <li><a class="dropdown-item" href="#">opcion 4</a></li>
+                    </ul>
+                  </li>
+             <!-- Fin de codigo del boton opciones que tiene que aparecer en la nav -->
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" wfd-id="id0">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <h1>LIBROS DEL AUTOR</h1>
+       <!-- Carrusel de texto -->
+       <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <!-- Primer elemento del carrusel -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100px;">
+              <p class="h4">El imperio final</p>
+            </div>
+          </div>
+          <!-- Segundo elemento del carrusel -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100px;">
+              <p class="h4">El pozo de la ascension</p>
+            </div>
+          </div>
+          <!-- Tercer elemento del carrusel -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100px;">
+              <p class="h4">El heroe de las eras</p>
+            </div>
+          </div>
+        </div>
+
+    <!-- Acordeón -->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Opcion 1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Opcion 2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Opcion 3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Opcion 4
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the fourth item's accordion body.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Texto en columnas -->
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-12 col-md-4">
+            <p>Brandon Sanderson es un autor de fantasía conocido por su habilidad para crear mundos ricos y complejos, con sistemas mágicos innovadores y personajes profundamente desarrollados. Sus obras se caracterizan por tramas intrigantes, giros inesperados y un enfoque en temas como la esperanza, el sacrificio y la lucha entre el bien y el mal.</p>
+          </div>
+          <!-- Columna 2 -->
+          <div class="col-12 col-md-4">
+            <p>La mayoría de los libros de Sanderson están ambientados en su universo compartido, conocido como el Cosmere. Este es un vasto multiverso en el que cada serie y libro pertenece a un mundo distinto, pero todos están conectados a través de secretos, entidades y eventos misteriosos que se revelan a lo largo de sus historias.</p>
+          </div>
+          <!-- Columna 3 -->
+          <div class="col-12 col-md-4">
+            <p>Entre sus obras más famosas se encuentran El Archivo de las Tormentas, una serie épica de fantasía que sigue la vida de varios personajes mientras luchan por salvar su mundo de fuerzas oscuras y desastrosas. Otros libros destacados incluyen Mistborn, una trilogía que presenta un sistema único de magia basado en metales, y Elantris, una novela que combina misterio, política y magia en una ciudad maldita.</p>
+          </div>
+        </div>
+      </div>
+    
+
+  </body>
+</html>
